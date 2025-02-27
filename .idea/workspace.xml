@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5691edf4-47ac-4e78-b4f2-b05897d4760b" name="변경" comment="Feat: 임시 카카오 로그인 설정 완료, 로그아웃 구현 예정">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ll/a20250227/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/templates/homePage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/templates/login.html" beforeDir="false" />
-    </list>
+    <list default="true" id="5691edf4-47ac-4e78-b4f2-b05897d4760b" name="변경" comment="Feat: 임시 카카오 로그인 설정 완료, 로그아웃 구현 예정" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +46,17 @@
                 </list>
               </option>
               <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/.." />
+            </RecentBranchesForRepo>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1740634569" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
             </RecentBranchesForRepo>
           </list>
         </option>
@@ -175,6 +174,7 @@
       <workItem from="1740633013849" duration="185000" />
       <workItem from="1740633214758" duration="302000" />
       <workItem from="1740634151980" duration="40000" />
+      <workItem from="1740634567615" duration="40000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: SecurityConfig, CustomOAuth2UserService 생성">
       <option name="closed" value="true" />
