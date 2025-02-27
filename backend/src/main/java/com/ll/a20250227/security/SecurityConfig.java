@@ -1,5 +1,6 @@
 package com.ll.a20250227.security;
 
+import com.ll.a20250227.oauth.CustomOAuth2UserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -20,7 +21,7 @@ public class SecurityConfig {
 
     // 시큐리티 필터 체인 설정
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http, CustomOAuth2UserService customOAuth2UserService) throws Exception {
         http
                 // csrf, cors 설정 등 추가로 필요한 사항이 있다면 아래에서 chain 구성
                 .csrf(AbstractHttpConfigurer::disable)
@@ -34,13 +35,11 @@ public class SecurityConfig {
                 )
                 // OAuth2 로그인 설정
                 .oauth2Login(oauth2 -> oauth2
-                        // 커스텀 로그인 페이지를 쓰고 싶다면 지정
-                        .loginPage("/login")
                         // 로그인 성공 시 이동할 기본 URL
                         .defaultSuccessUrl("/home", true)
                         // 사용자 정보 가져올 때 커스텀 서비스 사용
                         .userInfoEndpoint(userInfo -> userInfo
-                                .userService(customOAuth2UserService())
+                                .userService(customOAuth2UserService)
                         )
                 );
 
